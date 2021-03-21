@@ -192,7 +192,7 @@ header .img-wrapper{
 .conhecimentos{
 	display: grid;
 	grid-template-columns: repeat(16, 1fr);
-	grid-template-rows: repeat(6, 6rem);
+	grid-template-rows: repeat(6, 7rem);
 	grid-row-gap: .5rem;
 }
 .conhecimento:nth-child(1){
@@ -241,6 +241,7 @@ header .img-wrapper{
 	margin-top: .5rem;
 }
 										/*projetos*/
+
 .projetos{
 	display: flex;
 	justify-content: space-around;
@@ -295,22 +296,117 @@ header .img-wrapper{
 	width: 80%;
 	margin-bottom: 2rem;
 }
-.card-info button{
-	width: 8rem;
-	height: 2.5rem;
+.btn{
 	background-color: #ff5400; 
 	border: none;
 	color: white;
 	border-radius: .5rem;
 	font-size: 1rem;
 	box-shadow: 0 .1rem .8rem rgba(0,0,0,.4);
+	cursor: pointer;
+}
+.card-info button{
+	width: 8rem;
+	height: 2.5rem;
 }	
+.card-info button:hover{
+	opacity: .9;
+	color: black;
+}
 .card:hover .card-info{
-	bottom: 2rem;
+	bottom: 1rem;
 	opacity: 1;
 	visibility: visible;
 }					
-										/*Header*/
+										/*Contato*/
+.sessao-contato{
+	margin-top: 2rem;
+	width: 100%;
+	height: 100vh;
+	background-color: #272727;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contato-wrapper{
+	width: 60%;
+	height: 30rem;
+	display: flex;
+	box-shadow: 0 2rem 3rem rgba(0,0,0,.6);
+}
+.contato-left-side{
+	width: 35%;
+	background: linear-gradient(rgba(15,15,15,.6),rgba(22,22,22,.9)),
+	 url("../images/contato.jpg");
+	background-size: cover;
+}
+.contato-right-side{
+	width: 65%;
+	background-color: #eee;
+	padding: 1rem 3rem 3em 3rem;
+}
+.sessao-contato h1{
+	width: 100%;
+	text-align: center;
+	font-family: var(--primary-font);
+	color: #272727;
+	font-size: 3rem;
+	font-weight: lighter;
+}
+.sessao-contato form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.input-wrapper{
+	position: relative;
+	width: 100%;
+	margin-top: 1rem;
+}
+.field{
+	background:transparent;
+	border:none;
+	width: 100%;
+	font-size:1.3rem;
+	font-family: var(--secundary-font);
+	border-bottom: 1px dashed #636363;
+	outline: none;
+	margin-top: 2rem;
+}
+.input-wrapper textarea{
+	font-size: 1rem;
+	line-height: 1.3rem;
+	height: 1.5rem;
+	resize: vertical;
+	max-height: 5rem;
+}
+.field-label{
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	font-family: var(--secundary-font);
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	transition: .3s;
+}
+.field:focus ~ label{
+	top: 0rem;
+	font-size: 1rem;
+}
+.field:focus{
+	border-bottom: 1px solid;
+}
+.btn-submit{
+	font-size: 1.2rem;
+	text-transform: uppercase;	
+	margin-top: 1rem;
+	width: 100%;
+	height: 2rem;
+}
+.btn-submit:hover{
+	color: black;
+	opacity: .9;
+}
 										/*Header*/
 										/*Header*/
 										/*Header*/
