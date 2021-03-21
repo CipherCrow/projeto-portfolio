@@ -187,7 +187,7 @@
 
 						<div class="input-wrapper">
 							<input type="Email" class="field" id="email">
-							<label for="email" class="field-label">Email</label>
+							<label for="email" class="field-label">E-mail</label>
 						</div> <!-- inputwrapper -->
 
 						<div class="input-wrapper">
@@ -202,6 +202,40 @@
 
 			</div> <!-- contato-rapper -->
 		</section>	<!-- sessao contato -->
+
+		<section class="sessao-orcamento">
+			<div class="orcamento-wrapper">
+
+				<h1>Faça um orçamento</h1>
+				<form action="">
+
+					<label for="qtde">Quantidade de Páginas</label>
+					<input type="number" min="1" name="qtde" id="qtde">
+					<label for="js">Preciso de um script JS</label>
+					<input type="checkbox" name="js" id="js">
+					<label>Layout</label>
+
+					<div class="layout-wrapper">
+
+						<div class="radio-button">
+							<input type="radio" name="layout" id="layout-sim">
+							<label for="layout-sim">Preciso de um Layout</label>
+						</div> <!-- radio button -->
+
+						<div class="radio-button">
+							<input type="radio" name="layout" id="layout-nao">
+							<label for="layout-nao">Já tenho um Layout</label>
+						</div> <!-- radio button -->
+
+					</div> <!-- layout-wrapper -->
+
+					<label for="prazo">Prazo</label>
+					<input type="range" name="prazo" id="prazo">
+					<button type="submit" class="btn btn-orcamento">Enviar!</button>
+				</form>
+			</div> <!-- wrapper -->
+		</section> <!-- sessao orcamento -->
+
 
 	</div> <!-- container -->
 	<script src="script.js"></script>
