@@ -15,6 +15,9 @@
 	--secundary-font:"Josefin Slab", serif;
 	--action-font:"Mulish",serif;
 }
+html{
+	scroll-behavior: smooth;
+}
 
 										/*Float hamburguer*/
 .hamburguer{
@@ -103,6 +106,7 @@ header .img-wrapper{
 	border-radius: 5px;
 	animation: moveBanner 1s 0.9s forwards;
 	opacity: 0;
+	transition: .3s;
 }
 .banner button:hover{
 	opacity: 0.90;
@@ -128,6 +132,7 @@ header .img-wrapper{
 	top: 0;
 	right: -20rem;
 	transition: 1s;
+	z-index: 98;
 }
 .show-menu .sidebar{
 	right: 0;
@@ -402,6 +407,7 @@ header .img-wrapper{
 	margin-top: 1rem;
 	width: 100%;
 	height: 2rem;
+	transition: .3s;
 }
 .btn-submit:hover{
 	color: black;
@@ -471,13 +477,66 @@ header .img-wrapper{
 	text-transform: uppercase;
 	padding: 1rem;
 	cursor: pointer;
+	transition: .3s;
 	grid-column: 2;
 }
 .btn-orcamento:hover{
 	color: black;
 	opacity: .9;
 }
-										/*Header*/
+										/*rodape*/
+footer{
+	width: 100%;
+	height: 10rem;
+	background: #17181b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+.footer-content{
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-content p{
+	font-family: var(--secundary-font);
+	color: #a7a7a7;
+	font-size: 1.7rem;
+}
+.social-list li{
+	display: inline-block;
+}	
+.social-list a{
+	margin:0 2rem;
+	color: #a7a7a7;
+	font-size: 1.3rem;
+	transition: .3s;
+}
+.social-list a:hover{
+	color: #ff5400;
+}
+#link-topo{
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+	width: 3rem;
+	height: 3rem;
+	background-color: #ff5400;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+	color: white;
+}	
+#link-topo i{
+	font-size: 2rem;
+	line-height: 2rem;
+}	
+#link-topo:hover{
+	opacity: .9;
+	color: black;
+}						
 										/*Header*/
 										/*Header*/
 										/*Header*/
