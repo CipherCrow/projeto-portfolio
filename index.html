@@ -210,27 +210,28 @@
 				<form action="">
 
 					<label for="qtde">Quantidade de Páginas</label>
-					<input type="number" min="1" name="qtde" id="qtde">
+					<input type="number" min="1" name="qtde" id="qtde" required="">
 					<label for="js">Preciso de um script JS</label>
-					<input type="checkbox" name="js" id="js">
+					<input type="checkbox" name="js" id="js" required="">
 					<label>Layout</label>
 
 					<div class="layout-wrapper">
 
 						<div class="radio-button">
-							<input type="radio" name="layout" id="layout-sim">
+							<input type="radio" name="layout" id="layout-sim" required="" value="sim">
 							<label for="layout-sim">Preciso de um Layout</label>
 						</div> <!-- radio button -->
 
 						<div class="radio-button">
-							<input type="radio" name="layout" id="layout-nao">
+							<input type="radio" name="layout" id="layout-nao" required="" value="nao">
 							<label for="layout-nao">Já tenho um Layout</label>
 						</div> <!-- radio button -->
 
 					</div> <!-- layout-wrapper -->
 
-					<label for="prazo">Prazo</label>
-					<input type="range" name="prazo" id="prazo">
+					<label for="prazo">Prazo de (10) semanas</label>
+					<input type="range" name="prazo" min="1" max="10" id="prazo" value="10">
+					<label id="valorTotal"></label>
 					<button type="submit" class="btn btn-orcamento">Enviar!</button>
 				</form>
 			</div> <!-- wrapper -->
