@@ -1,3 +1,12 @@
+const preLoad = document.querySelector('.preloader');
+
+window.addEventListener('load',function(){
+	preLoad.style.opacity = '0';
+	setTimeout(function(){
+		preLoad.style.display = 'none';
+	}, 300);
+})
+
 let hamburguer = document.querySelector('.hamburguer');
 
 hamburguer.addEventListener('click',function(){
