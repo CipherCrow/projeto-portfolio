@@ -231,16 +231,41 @@ header .img-wrapper{
 .conhecimento-header{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	color: #4b4b4b;
 }
 .conhecimento-header i{
-	font-size: 2.5rem;
+	font-size: 3rem;
+}
+.conhecimento:nth-child(1) i{
+	color: #fc5700;
+}
+.conhecimento:nth-child(2) i{
+	color: #233ce0;
+}
+.conhecimento:nth-child(3) i{
+	color: #8f52cd;
+}
+.conhecimento:nth-child(4) i{
+	color: #42dea2;
+}
+.conhecimento:nth-child(5) i{
+	color: #f5e919;
+}
+.conhecimento:nth-child(6) i{
+	color: #242520;
 }
 .conhecimento-header h3{
 	font-family: var(--secundary-font);
 	font-size: 2rem;
 	padding-left: 1rem;
 }
+.conhecimento:nth-child(1) .conhecimento-header h3,
+.conhecimento:nth-child(2) .conhecimento-header h3,
+.conhecimento:nth-child(3) .conhecimento-header h3{
+	text-transform: uppercase;
+}
+
 .conhecimento-texto{
 	font-family: var(--secundary-font);
 	margin-top: .5rem;
@@ -249,6 +274,7 @@ header .img-wrapper{
 
 .projetos{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }	
 .card{
@@ -504,6 +530,7 @@ footer{
 	width: 60%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .footer-content p{
 	font-family: var(--secundary-font);
@@ -524,7 +551,7 @@ footer{
 }
 #link-topo{
 	position: fixed;
-	right: 3rem;
+	right: 2rem;
 	bottom: 3rem;
 	width: 3rem;
 	height: 3rem;
@@ -535,6 +562,7 @@ footer{
 	align-items: center;
 	transition: .3s;
 	color: white;
+	box-shadow: 0 .3rem .3rem rgba(0,0,0,.8);
 }	
 #link-topo i{
 	font-size: 2rem;
@@ -575,5 +603,214 @@ footer{
 		transform: rotate(360deg);
 	}
 }
-										/*Header*/
-										/*Header*/
+										/*responsivo*/
+@media screen and (max-width: 1024px){
+
+			/*Conhecimentos*/
+	.sessao-header{
+		padding: 1rem 0;
+	}
+	.conhecimento-header{
+		/*display: flex;*/
+		align-items: center;
+		justify-content: center;
+		/*color: #4b4b4b;*/
+	}
+	.conhecimentos{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.conhecimento{
+		width: 40%;
+		text-align: justify;
+	}
+	.conhecimento-header h3{
+		font-size: 2rem;
+		/*padding-left: 1rem;*/
+		/*padding-top: 1rem;*/
+	}
+	.conhecimento-texto{
+		font-size: 1.2rem;
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 2px dashed #ff5400;
+	}
+	.conhecimento-img-wrapper{
+		width: 50%;
+	}
+					/*projetos*/
+	.card{
+		width: 40%;
+		height: 25rem;
+		padding: 1rem 0;	
+	}
+	.card-info{
+		bottom: 0;
+		padding: 3rem;
+	}
+					/*contato*/
+	.contato-wrapper{
+		width: 90%;
+	}
+					/*orçamento*/
+	.orcamento-wrapper{
+		width: 90%;
+	}
+	.orcamento-wrapper h1{
+		padding: 0 3rem;
+		font-size: 2rem;
+	}
+					/*footer*/
+	.footer-content{
+		width: 90%;
+	}
+	.social-list a{
+		margin:0 1rem;
+		font-size: 2rem;
+	}
+}	
+@media screen and (max-width: 600px){
+
+				/*apresentacao*/
+	.banner{
+		top: unset;
+		left: 10%;
+		bottom: 10%;
+	}
+	.banner h1{
+		font-size: 3rem;
+		line-height: 3rem;
+		margin-bottom: 2rem;
+	}
+	.banner p{
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.banner button{
+		padding: 1rem 3rem;
+		font-size: 1rem;
+	}	
+				/*Conhecimentos*/
+	
+					/*projetos*/
+
+	.card{
+		width: 70%;
+		height: 30rem;	
+	}	
+					/*orçamento*/
+
+	.orcamento-wrapper form{
+		margin: 1rem;
+		margin-top: 2rem;
+	}	
+	.orcamento-wrapper label{
+		font-size: 1.2rem;
+	}	
+					/*footer*/
+
+	.footer-content{
+		width: 95%;
+	}
+	.social-list a{
+		margin:0 .8rem;
+		font-size: 1.5rem;
+	}	
+}	
+@media screen and (max-width: 425px){
+			/*hamburguer*/
+
+	.hamburguer{
+		right: 1rem;
+		font-size: 2rem;
+	}
+			/*link topo*/
+
+	#link-topo{
+		right: 1rem;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	#link-topo i{
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}	
+			/*Sessão header*/
+
+	.sessao-header h1{
+		font-size: 2rem;
+	}		
+			/*Conhecimentos*/
+
+	.conhecimento{
+		width: 90%;
+		text-align: center;
+	}
+	.conhecimento-header h3{
+		font-size: 2.2rem;
+		/*padding-top: 1.5rem;*/
+	}
+	.conhecimento-texto{
+		border-bottom: none;
+	}
+	.conhecimento-img-wrapper{
+		width: 80%;
+	}
+			/*projetos*/
+
+	.sessao-projetos .sessao-header{
+		padding-bottom: 0;
+	}
+	.card{
+		width: 80%;
+	}
+	.card-info{
+		padding: 2rem;
+	}	
+			/*contato*/
+	.contato-left-side{
+		width: 10%;
+	}
+	.contato-right-side{
+		width: 90%;
+		padding: 1rem 2rem 3em 2rem;
+	}	
+	.sessao-contato h1{
+		font-size: 2.5rem;
+	}
+	.field{
+		font-size:1rem;
+	}
+			/*orçamento*/
+	.orcamento-wrapper{
+		width: 90%;
+	}
+	.orcamento-wrapper h1{
+		padding: 0 1rem;
+		font-size: 1.5rem;
+		top: -2rem;
+	}			
+	.orcamento-wrapper form{
+		margin: 1rem;
+		margin-top: 2rem;
+	}	
+	.orcamento-wrapper label{
+		font-size: 1.2rem;
+	}	
+			/*footer*/
+
+	.footer-content{
+		width: 100%;
+		height: 50%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.social-list a{
+		margin:0 .5rem;
+		font-size: 1.5rem;
+	}	
+
+}								
+										/*Fim*/
