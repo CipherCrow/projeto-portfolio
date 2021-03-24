@@ -368,7 +368,7 @@ header .img-wrapper{
 .contato-left-side{
 	width: 35%;
 	background: linear-gradient(rgba(15,15,15,.6),rgba(22,22,22,.9)),
-	 url("../images/contato.jpg");
+	 url("../images/contato1.jpg");
 	background-size: cover;
 }
 .contato-right-side{
@@ -677,7 +677,7 @@ footer{
 	.banner{
 		top: unset;
 		left: 10%;
-		bottom: 10%;
+		bottom: 20%;
 	}
 	.banner h1{
 		font-size: 3rem;
@@ -749,6 +749,7 @@ footer{
 			/*Conhecimentos*/
 
 	.conhecimento{
+		padding: 1rem;
 		width: 90%;
 		text-align: center;
 	}
