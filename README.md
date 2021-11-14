@@ -1,5 +1,5 @@
 ##  Projeto de Portfolio!
-Projeto de Website desenvolvido para aprender novas técnicas. Consiste em um portfólio para desenvolvedor. Com esse projeto eu aprendi a dar mais valor a animacoes sucintas que melhorem a experiencia do ususario.
+Projeto de Website desenvolvido para aprender novas técnicas. Consiste em um portefólio para desenvolvedor. Com esse projeto eu aprendi a dar mais valor a animações sucintas que melhorem a experiência do usuário.
 
 ## 💻 Tecnologias 
 Fontawesome para ícones.
