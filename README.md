@@ -1,18 +1,20 @@
-# Projeto de Portfólio
+##  Projeto de Portfolio!
+Projeto de Website desenvolvido para aprender novas técnicas. Consiste em um portfólio para desenvolvedor. Com esse projeto eu aprendi a dar mais valor a animacoes sucintas que melhorem a experiencia do ususario.
 
-Portfólio do desenvolvedor.
-
-## Tarefas
-
-O controle das tarefas desse projeto será controlado pelo GitHub
+## 💻 Tecnologias 
+Fontawesome para ícones.
+>![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+>![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+>![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ## Ícones
-
 - :package: Nova funcionalidade
-- :up: Atualização
-- :beetle: Correção de bug
-- :checkered_flag: Release
+- :up: Atualização.
+- :bug: Correcão.
 
-## Site pronto
+## 📱 GitHub-Pages
+- [x] Responsividade
+- [x] Finalizado
+- [x] Ao Ar
 
-https://github.com/CipherCrow/projeto-portfolio
+>GitHub-Pages: https://ciphercrow.github.io/projeto-portfolio/
